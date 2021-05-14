@@ -29,7 +29,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/google/go-jsonnet/ast"
+	"github.com/nbycomp/go-jsonnet/ast"
 )
 
 func builtinPlus(i *interpreter, x, y value) (value, error) {

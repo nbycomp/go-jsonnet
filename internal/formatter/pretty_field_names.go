@@ -17,9 +17,9 @@ limitations under the License.
 package formatter
 
 import (
-	"github.com/google/go-jsonnet/ast"
-	"github.com/google/go-jsonnet/internal/parser"
-	"github.com/google/go-jsonnet/internal/pass"
+	"github.com/nbycomp/go-jsonnet/ast"
+	"github.com/nbycomp/go-jsonnet/internal/parser"
+	"github.com/nbycomp/go-jsonnet/internal/pass"
 )
 
 // PrettyFieldNames forces minimal syntax with field lookups and definitions

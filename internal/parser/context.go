@@ -19,7 +19,7 @@ package parser
 import (
 	"fmt"
 
-	"github.com/google/go-jsonnet/ast"
+	"github.com/nbycomp/go-jsonnet/ast"
 )
 
 var topLevelContext = "$"

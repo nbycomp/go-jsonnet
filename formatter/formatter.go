@@ -4,7 +4,7 @@
 // customized using formatter.Options.
 package formatter
 
-import "github.com/google/go-jsonnet/internal/formatter"
+import "github.com/nbycomp/go-jsonnet/internal/formatter"
 
 // StringStyle controls how the reformatter rewrites string literals.
 // Strings that contain a ' or a " use the optimal syntax to avoid escaping

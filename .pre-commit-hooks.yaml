@@ -4,4 +4,4 @@
   entry: jsonnetfmt -i
   language: golang
   files: '\.(jsonnet|libsonnet)$'
-  additional_dependencies: [ "github.com/google/go-jsonnet/cmd/jsonnetfmt" ]
+  additional_dependencies: [ "github.com/nbycomp/go-jsonnet/cmd/jsonnetfmt" ]

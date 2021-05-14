@@ -1,7 +1,7 @@
 package common
 
 import (
-	"github.com/google/go-jsonnet/ast"
+	"github.com/nbycomp/go-jsonnet/ast"
 )
 
 // VariableKind allows distinguishing various kinds of variables.

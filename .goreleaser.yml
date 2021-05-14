@@ -58,7 +58,7 @@ nfpms:
     builds:
       - jsonnet
     description: A data templating language for app and tool developers
-    homepage: https://github.com/google/go-jsonnet
+    homepage: https://github.com/nbycomp/go-jsonnet
     license: Apache 2.0
     formats:
       - deb
@@ -74,7 +74,7 @@ nfpms:
     package_name: jsonnetfmt-go
     builds:
       - jsonnetfmt
-    homepage: https://github.com/google/go-jsonnet
+    homepage: https://github.com/nbycomp/go-jsonnet
     license: Apache 2.0
     formats:
       - deb

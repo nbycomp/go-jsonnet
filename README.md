@@ -2,8 +2,8 @@
 
 [![GoDoc Widget]][GoDoc] [![Travis Widget]][Travis] [![Coverage Status Widget]][Coverage Status]
 
-[GoDoc]: https://godoc.org/github.com/google/go-jsonnet
-[GoDoc Widget]: https://godoc.org/github.com/google/go-jsonnet?status.png
+[GoDoc]: https://godoc.org/github.com/nbycomp/go-jsonnet
+[GoDoc Widget]: https://godoc.org/github.com/nbycomp/go-jsonnet?status.png
 [Travis]: https://travis-ci.org/google/go-jsonnet
 [Travis Widget]: https://travis-ci.org/google/go-jsonnet.svg?branch=master
 [Coverage Status Widget]: https://coveralls.io/repos/github/google/go-jsonnet/badge.svg?branch=master
@@ -16,7 +16,7 @@ This code is known to work on Go 1.11 and above. We recommend always using the n
 ## Installation instructions
 
 ```
-go get github.com/google/go-jsonnet/cmd/jsonnet
+go get github.com/nbycomp/go-jsonnet/cmd/jsonnet
 ```
 
 It's also available on Homebrew:

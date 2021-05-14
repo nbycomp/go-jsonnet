@@ -1,8 +1,8 @@
 package utils
 
 import (
-	"github.com/google/go-jsonnet/ast"
-	"github.com/google/go-jsonnet/internal/errors"
+	"github.com/nbycomp/go-jsonnet/ast"
+	"github.com/nbycomp/go-jsonnet/internal/errors"
 )
 
 // ErrCollector is a struct for accumulating warnings / errors from the linter.

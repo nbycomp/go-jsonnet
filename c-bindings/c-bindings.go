@@ -7,9 +7,9 @@ import (
 	"path"
 	"unsafe"
 
-	"github.com/google/go-jsonnet"
-	"github.com/google/go-jsonnet/ast"
-	"github.com/google/go-jsonnet/formatter"
+	"github.com/nbycomp/go-jsonnet"
+	"github.com/nbycomp/go-jsonnet/ast"
+	"github.com/nbycomp/go-jsonnet/formatter"
 
 	// #cgo CXXFLAGS: -std=c++11 -Wall -I../cpp-jsonnet/include
 	// #include "internal.h"

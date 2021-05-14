@@ -18,7 +18,7 @@ package parser
 import (
 	"testing"
 
-	"github.com/google/go-jsonnet/ast"
+	"github.com/nbycomp/go-jsonnet/ast"
 )
 
 var (

@@ -1,9 +1,9 @@
 package variables
 
 import (
-	"github.com/google/go-jsonnet/ast"
-	"github.com/google/go-jsonnet/internal/parser"
-	"github.com/google/go-jsonnet/linter/internal/common"
+	"github.com/nbycomp/go-jsonnet/ast"
+	"github.com/nbycomp/go-jsonnet/internal/parser"
+	"github.com/nbycomp/go-jsonnet/linter/internal/common"
 )
 
 // Environment is mapping from variable names to information about variables.
