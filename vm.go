@@ -26,9 +26,9 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/nbycomp/go-jsonnet/ast"
-	"github.com/nbycomp/go-jsonnet/internal/parser"
-	"github.com/nbycomp/go-jsonnet/internal/program"
+	"github.com/google/go-jsonnet/ast"
+	"github.com/google/go-jsonnet/internal/parser"
+	"github.com/google/go-jsonnet/internal/program"
 )
 
 // Note: There are no garbage collection params because we're using the native

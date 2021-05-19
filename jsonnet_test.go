@@ -9,7 +9,7 @@ import (
 	"testing"
 	"unicode/utf8"
 
-	"github.com/nbycomp/go-jsonnet/ast"
+	"github.com/google/go-jsonnet/ast"
 )
 
 type errorFormattingTest struct {

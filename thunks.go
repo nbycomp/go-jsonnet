@@ -17,7 +17,7 @@ limitations under the License.
 package jsonnet
 
 import (
-	"github.com/nbycomp/go-jsonnet/ast"
+	"github.com/google/go-jsonnet/ast"
 )
 
 // readyValue

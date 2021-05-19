@@ -1,6 +1,6 @@
 package types
 
-import "github.com/nbycomp/go-jsonnet/ast"
+import "github.com/google/go-jsonnet/ast"
 
 func prepareStdlib(g *typeGraph) {
 	g.newPlaceholder()

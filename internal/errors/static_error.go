@@ -20,7 +20,7 @@ package errors
 import (
 	"fmt"
 
-	"github.com/nbycomp/go-jsonnet/ast"
+	"github.com/google/go-jsonnet/ast"
 )
 
 //////////////////////////////////////////////////////////////////////////////

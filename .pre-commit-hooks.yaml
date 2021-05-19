@@ -4,10 +4,6 @@
   entry: jsonnetfmt
   args: [-i]
   language: golang
-<<<<<<< HEAD
-  files: '\.(jsonnet|libsonnet)$'
-  additional_dependencies: [ "github.com/nbycomp/go-jsonnet/cmd/jsonnetfmt" ]
-=======
   files: \.(jsonnet|libsonnet)$
   minimum_pre_commit_version: 2.10.1
 - id: jsonnet-lint
@@ -17,4 +13,3 @@
   language: golang
   files: \.(jsonnet|libsonnet)$
   minimum_pre_commit_version: 2.10.1
->>>>>>> ece9c5dc949f90c5f6f5f84e34a32234b4b91c5e

@@ -17,8 +17,8 @@ limitations under the License.
 package formatter
 
 import (
-	"github.com/nbycomp/go-jsonnet/ast"
-	"github.com/nbycomp/go-jsonnet/internal/pass"
+	"github.com/google/go-jsonnet/ast"
+	"github.com/google/go-jsonnet/internal/pass"
 )
 
 // FixNewlines is a formatter pass that adds newlines inside complex structures
