@@ -3,13 +3,19 @@ package types
 import (
 	"fmt"
 
+<<<<<<< HEAD
 	"github.com/nbycomp/go-jsonnet/ast"
 	"github.com/nbycomp/go-jsonnet/internal/parser"
 	"github.com/nbycomp/go-jsonnet/linter/internal/common"
 	"github.com/nbycomp/go-jsonnet/linter/internal/utils"
+=======
+	"github.com/google/go-jsonnet/ast"
+	"github.com/google/go-jsonnet/internal/parser"
+	"github.com/google/go-jsonnet/linter/internal/common"
+>>>>>>> ece9c5dc949f90c5f6f5f84e34a32234b4b91c5e
 )
 
-func checkSubexpr(node ast.Node, typeOf exprTypes, ec *utils.ErrCollector) {
+func checkSubexpr(node ast.Node, typeOf exprTypes, ec *common.ErrCollector) {
 	for _, child := range parser.Children(node) {
 		check(child, typeOf, ec)
 	}
@@ -17,7 +23,7 @@ func checkSubexpr(node ast.Node, typeOf exprTypes, ec *utils.ErrCollector) {
 
 // check verifies that the types are valid for a given program, given
 // the previously resolved types.
-func check(node ast.Node, typeOf exprTypes, ec *utils.ErrCollector) {
+func check(node ast.Node, typeOf exprTypes, ec *common.ErrCollector) {
 	checkSubexpr(node, typeOf, ec)
 	switch node := node.(type) {
 	case *ast.Apply:
@@ -89,7 +95,7 @@ func check(node ast.Node, typeOf exprTypes, ec *utils.ErrCollector) {
 }
 
 // TODO(sbarzowski) eliminate duplication with the interpreter maybe (this is AST-level and there it's value-level)
-func checkArgs(params []ast.Parameter, args *ast.Arguments, loc *ast.LocationRange, ec *utils.ErrCollector) {
+func checkArgs(params []ast.Parameter, args *ast.Arguments, loc *ast.LocationRange, ec *common.ErrCollector) {
 	received := make(map[ast.Identifier]bool)
 	accepted := make(map[ast.Identifier]bool)
 
@@ -133,7 +139,7 @@ func checkArgs(params []ast.Parameter, args *ast.Arguments, loc *ast.LocationRan
 // * root nodes of all (transitively) imported Jsonnet files
 // * resolution of variables in all files
 // * importFunc which allows resolving imports
-func Check(mainNode ast.Node, roots map[string]ast.Node, vars map[string]map[ast.Node]*common.Variable, importFunc ImportFunc, ec *utils.ErrCollector) {
+func Check(mainNode ast.Node, roots map[string]ast.Node, vars map[string]map[ast.Node]*common.Variable, importFunc ImportFunc, ec *common.ErrCollector) {
 	et := make(exprTypes)
 	g := newTypeGraph(importFunc)
 	g.addRoots(roots, vars)
