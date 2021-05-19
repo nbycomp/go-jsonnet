@@ -4,6 +4,7 @@ package linter
 import (
 	"io"
 
+<<<<<<< HEAD
 	jsonnet "github.com/nbycomp/go-jsonnet"
 	"github.com/nbycomp/go-jsonnet/ast"
 	"github.com/nbycomp/go-jsonnet/internal/errors"
@@ -14,6 +15,17 @@ import (
 	"github.com/nbycomp/go-jsonnet/linter/internal/types"
 	"github.com/nbycomp/go-jsonnet/linter/internal/utils"
 	"github.com/nbycomp/go-jsonnet/linter/internal/variables"
+=======
+	jsonnet "github.com/google/go-jsonnet"
+	"github.com/google/go-jsonnet/ast"
+	"github.com/google/go-jsonnet/internal/errors"
+	"github.com/google/go-jsonnet/internal/parser"
+
+	"github.com/google/go-jsonnet/linter/internal/common"
+	"github.com/google/go-jsonnet/linter/internal/traversal"
+	"github.com/google/go-jsonnet/linter/internal/types"
+	"github.com/google/go-jsonnet/linter/internal/variables"
+>>>>>>> ece9c5dc949f90c5f6f5f84e34a32234b4b91c5e
 )
 
 // ErrorWriter encapsulates a writer and an error state indicating when at least
@@ -66,7 +78,7 @@ func lint(vm *jsonnet.VM, node nodeWithLocation, errWriter *ErrorWriter) {
 			errWriter.writeError(vm, errors.MakeStaticError("Unused variable: "+string(v.Name), v.LocRange))
 		}
 	}
-	ec := utils.ErrCollector{}
+	ec := common.ErrCollector{}
 
 	vars := make(map[string]map[ast.Node]*common.Variable)
 	for importedPath, info := range variablesInFile {

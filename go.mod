@@ -5,6 +5,6 @@ replace github.com/nbycomp/go-jsonnet => github.com/nbycomp/go-jsonnet v0.17.1-0
 go 1.13
 
 require (
-	github.com/fatih/color v1.9.0
+	github.com/fatih/color v1.10.0
 	github.com/sergi/go-diff v1.1.0
 )
